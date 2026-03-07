@@ -5,21 +5,21 @@
 class Alfred < Formula
   desc "Your silent butler for Claude Code"
   homepage "https://github.com/hir4ta/claude-alfred"
-  version "0.46.0"
+  version "0.47.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hir4ta/claude-alfred/releases/download/v0.46.0/alfred_darwin_amd64.tar.gz"
-      sha256 "881db50a5d52c199e6af6708e9d0e2b8774e7c05d805effd202cfd07d3ad8d61"
+      url "https://github.com/hir4ta/claude-alfred/releases/download/v0.47.0/alfred_darwin_amd64.tar.gz"
+      sha256 "308e0a75a5b6b187e8c043267e752c6615056c1172806fecc83a9a8001b99797"
 
       define_method(:install) do
         bin.install "alfred"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hir4ta/claude-alfred/releases/download/v0.46.0/alfred_darwin_arm64.tar.gz"
-      sha256 "d56242030d0a6823f790dba2268c292818abfd5aa89c3f4a52730d518d69d4a1"
+      url "https://github.com/hir4ta/claude-alfred/releases/download/v0.47.0/alfred_darwin_arm64.tar.gz"
+      sha256 "7986b5612f71a3cf7b69841710165f6cb0f3241b811b6be7bd0351a9a0b28827"
 
       define_method(:install) do
         bin.install "alfred"
@@ -29,15 +29,15 @@ class Alfred < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hir4ta/claude-alfred/releases/download/v0.46.0/alfred_linux_amd64.tar.gz"
-      sha256 "2b1e77eec92c2a61a4f3ff7b2b97a51408205da1530af6c29a72a8aed83dd7ac"
+      url "https://github.com/hir4ta/claude-alfred/releases/download/v0.47.0/alfred_linux_amd64.tar.gz"
+      sha256 "12f0da32ae7558220b1a7b5568babe3a22b5e65a9f838e2b725e782fac536fbe"
       define_method(:install) do
         bin.install "alfred"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hir4ta/claude-alfred/releases/download/v0.46.0/alfred_linux_arm64.tar.gz"
-      sha256 "2fbdbcdbee1a457bb817a9bde250da3bb702442fa4e21ccfa4428ffccb7eeb41"
+      url "https://github.com/hir4ta/claude-alfred/releases/download/v0.47.0/alfred_linux_arm64.tar.gz"
+      sha256 "5da9a03c20aaca3ae8a4593bbdf05fc950e222584de8547b0ded0104ab1e53b8"
       define_method(:install) do
         bin.install "alfred"
       end
